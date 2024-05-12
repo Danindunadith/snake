@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/score2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:text="score"
+        app:layout_constraintBottom_toTopOf="@+id/lilu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="390dp"
+        android:layout_height="390dp"
+        android:gravity="center"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+
+        <Button
+            android:id="@+id/score"
+            android:background="@color/green"
+            android:layout_width="wrap_content"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="120dp"
+            android:layout_marginTop="140dp"
+            android:textSize="15dp"
+            android:text="Game Over ! Play Again">
+        </Button>
+
+
+
+        <Button
+            android:id="@+id/new_game"
+            android:background="#00BCD4"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="130dp"
+            android:layout_marginTop="130dp"
+            android:text="New Game">
+
+        </Button>
+
+        <Button
+            android:id="@+id/resume"
+            android:background="#0392D3"
+            android:layout_width="150dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/new_game"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="130dp"
+            android:layout_marginTop="10dp"
+            android:text="Resume Game">
+
+        </Button>
+
+
+
+
+
+        <Button
+            android:id="@+id/playagain"
+            android:background="@color/red"
+            android:layout_width="150dp"
+            android:textAlignment="center"
+            android:layout_height="80dp"
+            android:layout_below="@id/resume"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="120dp"
+            android:layout_marginTop="60dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Game Over ! Play Again">
+
+        </Button>
+
+        <RelativeLayout
+            android:id="@+id/board"
+            android:layout_width="380dp"
+            android:layout_height="380dp"
+            android:background="#3A98A5"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            tools:ignore="MissingConstraints">
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lilu"
+        android:layout_width="330dp"
+        android:layout_height="330dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/up"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#7581C6"
+                android:gravity="center"
+                android:text="UP"
+                app:cornerRadius="6dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></Button>
+
+            <Button
+                android:id="@+id/ins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#972196F3"
+                android:text="Learn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <Button
+                android:id="@+id/left"
+                android:layout_margin="10dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:backgroundTint="#7581C6"
+                app:cornerRadius="6dp"
+                android:text="LEFT">
+            </Button>
+
+            <Button
+                android:id="@+id/pause"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#44529F"
+                android:gravity="center"
+                android:text="pause"
+                app:cornerRadius="10dp"></Button>
+
+            <Button
+                android:id="@+id/right"
+                android:layout_margin="10dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:cornerRadius="6dp"
+                android:backgroundTint="#7581C6"
+                android:text="RIGHT">
+            </Button>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <Button
+                android:id="@+id/levelUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#4CAF50"
+                android:text="Hard"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/down"
+                android:layout_margin="10dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:backgroundTint="#7581C6"
+                app:cornerRadius="6dp"
+                android:text="DOWN">
+            </Button>
+
+            <Button
+                android:id="@+id/levelDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#4CAF50"
+                android:text="Esay"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
